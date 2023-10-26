@@ -1,15 +1,16 @@
-let eded=8;
-let bolen=1;
-let i=2;
 
-while(eded%i===0)
-{
-for(let i=2; i<eded; i++)
+let x="";
 
-    {
-        bolen=i; 
-    }
+for(let i=0;i<5;i++){
+    x+='X'
+    console.log(x)
 }
-console.log(bolen);
 
-//7. Verilmiş ədədin ən böyük bölənini tapib, console çıxardın.
+
+for(let i=6;i>0;i--){
+    let y="";
+    for(let j=0;j<i;j++){
+        y=y+'X'
+    }
+    console.log(y)
+}
