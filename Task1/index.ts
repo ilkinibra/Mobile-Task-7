@@ -1,11 +1,8 @@
-//4. person adlı, sahələri name, surname olan obyektdə getFullName adlı bir funskiya yaradıb name + surname qaytarsın.
+//5. Hər hansısa bir obyekt yaradıb onun key və value bir sətrdə console çıxardın. Məsələn: Nəticədə “key: name, value: Cavid”.
+const Object1 = { 
+    name: "Ilkin" 
+};
 
-const person = {
-    name : "ILKIN",
-    surname : "IBRAHIMOV"
+for (const key in Object1) {
+  console.log(`key: ${key}, value: ${Object[key]}`);
 }
- function getFullName(name,surname) {
-    return person.name + ' ' + person.surname;
-}
-  
-  console.log(getFullName()); 
