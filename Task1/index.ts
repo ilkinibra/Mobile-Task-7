@@ -1,19 +1,9 @@
-const gun = 8; 
+// 1. 2 daxil olan parametrlərin cəmini qaytaran funksiya yazın.
 
-if (gun === 1) {
-    console.log("Bazar ertesi");
-} else if (gun === 2) {
-    console.log("cerwenbe axwami");
-} else if (gun === 3) {
-    console.log("cerwenbe");
-} else if (gun === 4) {
-    console.log("cume axwami");
-} else if (gun === 5) {
-    console.log("cume");
-} else if (gun === 6) {
-    console.log("wenbe");
-} else if (gun === 7) {
-    console.log("bazar");
-} else {
-    console.log(" heftede yeddi gun var!!!");
-}
+function sum (a,b){
+    let add 
+     add = (a+b)
+    console.log (add)
+  }
+  sum (15,18)
+  sum (80,70)
