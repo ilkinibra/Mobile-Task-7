@@ -1,9 +1,15 @@
-let num1=5;
-let num2=8;
-let cem=0;
-while( num1<=num2)
+let eded=8;
+let bolen=1;
+let i=2;
+
+while(eded%i===0)
 {
-   cem=cem+num1+1; 
-   num1++;
+for(let i=2; i<eded; i++)
+
+    {
+        bolen=i; 
+    }
 }
-console.log(cem);
+console.log(bolen);
+
+//7. Verilmiş ədədin ən böyük bölənini tapib, console çıxardın.
