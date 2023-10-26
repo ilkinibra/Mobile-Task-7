@@ -1,15 +1,9 @@
-function sademurekkeb(eded){
-    if(eded <=1){
-        return 'ne sade eded nede murekkeb deyil';
-    }
-    for(let i= 2; i<= Math.sqrt(eded);i++){
-        if(eded%i===0){
-            return 'murekkeb eded'
-        }
-    
-    }
-    return 'sade eded'
-    }
-    const eded=31;
-    const statuss =sademurekkeb(eded);
-    console.log(statuss);
+const num1= 2;
+let start =num1 +1;
+const num2=6;
+
+while(start < num2){
+    const kvadrat =start *start;
+    console.log({start} +"ededin kvadrat" +{kvadrat})
+    start++;
+}
