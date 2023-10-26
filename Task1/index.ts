@@ -1,18 +1,15 @@
-//6. Massivdən false deyimli (undefined, null, false və s.i.) elementləri silib yeni massiv qaytaran funksiya yazın.
+//7. Massivdə yerləşən elementləri reverse edən funksiya yazın.
 
-
-function filterElements(arr) {
-    const filteredArray = [];
-  
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i]) {
-        filteredArray.push(arr[i]);
-      }
+function reverse(arr) {
+    const reversedArray = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+      reversedArray.push(arr[i]);
     }
-    return filteredArray;
+    return reversedArray;
   }
   
-  const originalArray = [1, null, 2, undefined, 3, false, 4, 5];
-  const newArray = filterElements(originalArray);
+  const originalArray = [1, 2, 3, 4, 5];
+  const reversedArray = reverse(originalArray);
   
-  console.log(newArray); 
+  console.log(reversedArray);
+  
