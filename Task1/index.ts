@@ -1,9 +1,12 @@
-/// 3. Parametrlərdə “Ad” və “Soyad” qəbul edib aralarında boşluğ ilə qaytaran funksiya yazın.
+/// 4. Daxil olan ədədin mənfi və yaxud müsbət olduğunu yoxlayıb boolean qaytaran funksiya yazın.
 
-const firstName = 'ILKIN';
-const lastName = 'IBRAHIMOV';
-
-function fullName(firstName,lastName){
-    return firstName.concat(' ').concat(lastName);
-}
-console.log(fullName(firstName,lastName));
+function isPositive(number) {
+    if (number > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  const num = -5;
+  const isNumPositive = isPositive(num);
+  console.log(`Is ${num} positive? ${isNumPositive}`);
