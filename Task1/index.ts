@@ -1,15 +1,11 @@
-// 7. Parametrdə n ədədini qəbul edən və n-ci Fibonaççi sayını qaytaran funksiya yazın. (rekursiya)
+///#hometask #js
+//1. student adlı obyekt yaradıb name, age, course, faculty adlı sahələr verib hər birini console çıxardın.
 
-function fib (n){
-    let a=1;
-    let b=1;
-    for(let i=3; i<=n;i++){
-        let c=a+b;
-        a=b;
-        b=c;
-    }
-    return b;
+const Student ={
+    Name : "Ilkin",
+    Surname : "Ibrahimov",
+    Age : 21,
+    Course : "Master 1",
+    Faculty : "Computer Sciences and Technology(Sabah)"
 }
-console.log(fib(10))
-
-// 1 1 2 3 5 8 13 21 34 55
+console.log(`Name: ${Student.Name}\nSurname: ${Student.Surname}\nAge: ${Student.Age}\nCourse: ${Student.Course}\nFaculty: ${Student.Faculty}`);
