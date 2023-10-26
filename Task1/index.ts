@@ -1,12 +1,16 @@
-/// 4. Daxil olan ədədin mənfi və yaxud müsbət olduğunu yoxlayıb boolean qaytaran funksiya yazın.
+//5. Parametrdən daxil olan ədədin faktorialını qaytaran funksiya yaradın.
 
-function isPositive(number) {
-    if (number > 0) {
-      return true;
-    } else {
-      return false;
+function faktorial(n) {
+    if(n===0){
+      return 0;
     }
-  }
-  const num = -5;
-  const isNumPositive = isPositive(num);
-  console.log(`Is ${num} positive? ${isNumPositive}`);
+      if (n === 1) {
+        return 1;
+      } else {
+        return n * faktorial(n - 1);
+      }
+    }
+    
+    const number = 0;
+    const result = faktorial(number);
+    console.log(`Eded ${number} faktorialı==>${result}`);
