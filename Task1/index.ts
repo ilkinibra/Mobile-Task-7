@@ -1,14 +1,13 @@
-//6. Obyektin hər hansısa bir sahəsinin olub olmadığını yoxluyan bir funksiya yazın.
-const person =
-{
-    Name: "İlkin",
-    Surname: "İbrahimov",
-}
+///7. Ədədlərdən ibarət obyekt yaradın və bütün value-ların cəmini console çıxardın.
 
-function yoxla(obj,key)
-{
-    return key in obj;
+const obj ={
+    a:3,
+    b:2,
+    c:5,
+    d:35
 }
-
-console.log(yoxla(person,"Name"));
-console.log(yoxla(person,"Age"));
+let sum=0;
+for(key in obj){
+    sum += obj[key];
+}
+console.log(sum);
