@@ -1,6 +1,5 @@
-let num=5;
-let value1=num**2;
-let value2=num**3;
- 
-console.log(value1);
-console.log(value2);
+const V=60;
+const S=180;
+
+const result =((S/V)*60);
+console.log(result);
