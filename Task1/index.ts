@@ -1,24 +1,11 @@
-//3. 1-dən 10 kimi olan ədədlərin hərfi yazılışın obyektdən istifadə edərək console çıxardın.
+//4. person adlı, sahələri name, surname olan obyektdə getFullName adlı bir funskiya yaradıb name + surname qaytarsın.
 
-
-let numWords = {
-    1: 'bir',
-    2: 'iki',
-    3: 'uc',
-    4: 'dord',
-    5: 'bes',
-    6: 'alti',
-    7: 'yeddi',
-    8: 'sekkiz',
-    9: 'doqquz',
-    10: 'on'
-  };
+const person = {
+    name : "ILKIN",
+    surname : "IBRAHIMOV"
+}
+ function getFullName(name,surname) {
+    return person.name + ' ' + person.surname;
+}
   
-  let num = 1;
-  if(num<=10){
-    console.log(numWords[num]);
-  }
-  else{
-    console.log("SERTI KECIR!!!")
-  }
-  
+  console.log(getFullName()); 
