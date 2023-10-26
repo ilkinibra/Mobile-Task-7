@@ -1,9 +1,12 @@
-// 1. 2 daxil olan parametrlərin cəmini qaytaran funksiya yazın.
+// 2. Daxil olan parametrin “Tək” və yaxud “Cüt” olduğunu yoxlayıb boolean qaytaran funksiya yazın.
 
-function sum (a,b){
-    let add 
-     add = (a+b)
-    console.log (add)
+function isEven (number) {
+    return number % 2 === 0;
   }
-  sum (15,18)
-  sum (80,70)
+  
+  function isOdd (number) {
+    return number % 2 !== 0;
+  }
+  
+  console.log(isEven(5)); 
+  console.log(isOdd(5)); 
