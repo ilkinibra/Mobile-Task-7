@@ -1,11 +1,20 @@
-///#hometask #js
-//1. student adlı obyekt yaradıb name, age, course, faculty adlı sahələr verib hər birini console çıxardın.
+//2. Bir obyekt yaradıb başqa dəyişənə yeni obyekt kimi kopyala.
 
-const Student ={
-    Name : "Ilkin",
-    Surname : "Ibrahimov",
-    Age : 21,
-    Course : "Master 1",
-    Faculty : "Computer Sciences and Technology(Sabah)"
+const carDimension ={
+    width : 100,
+    height : 130,
+    length : 200,
+    weight : 2000
+};
+
+const carView ={
+    colour : "Black",
+    motor : 5.5,
+    speed : 400
 }
-console.log(`Name: ${Student.Name}\nSurname: ${Student.Surname}\nAge: ${Student.Age}\nCourse: ${Student.Course}\nFaculty: ${Student.Faculty}`);
+
+const car ={
+    ...carDimension,
+    ...carView
+}
+console.log(`Colour: ${car.colour}\nMotor: ${car.motor}\nSpeed: ${car.speed}\nWidth: ${car.width}\nHeight: ${car.height}\nLength: ${car.length}\nWeight: ${car.weight}`)
