@@ -1,21 +1,38 @@
-//4. Massivdə yerləşən bütün tək və cüt ədədlərı ayrı massivlərə yazın. Məsələn [1,2,3,4,5] -> [1,3,5] və [2,4].
+//5. Massivdə yerləşən ədələri böyükdən kiçiyə və kiçikdən böyüyə çeşidliyin.
 
-function oddAndEven(arr) {
-    const oddNumbers = [];
-    const evenNumbers = [];
-    for (let i = 0; i < arr.length; i++){
-      if (arr[i] % 2 === 0) {
-        evenNumbers.push(arr[i]);
-      } 
-      else {
-        oddNumbers.push(arr[i]);
+function boyukdenKiciye(arr) {
+    const n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+      for (let j = 0; j < n - 1 - i; j++) {
+        if (arr[j] < arr[j + 1]) {
+          const temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
       }
     }
-    return [oddNumbers, evenNumbers];
   }
   
-  const numbers = [1, 2, 3, 4, 5];
-  const [oddArray, evenArray] = oddAndEven(numbers);
+  function kicikdenBoyuye(arr) {
+    const n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+      let minIndex = i;
+      for (let j = i + 1; j < n; j++) {
+        if (arr[j] < arr[minIndex]) {
+          minIndex = j;
+        }
+      }
+      if (minIndex !== i) {
+        const temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+      }
+    }
+  }   
+  const numbers = [52, 2, 9, 1, 5, 6];
+
+  kicikdenBoyuye(numbers);
+  console.log("Kicikden Boyuye", numbers)
   
-  console.log("Tek ededler:", oddArray);
-  console.log("Cut ededler:", evenArray);
+  boyukdenKiciye(numbers);
+  console.log("BOYUKDEN KICIYE:", numbers);
