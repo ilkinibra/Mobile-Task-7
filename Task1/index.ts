@@ -1,10 +1,15 @@
-// 6. Parametrlərdən gələn intervalda yerləşən ədədləri funksiya ilə console çıxardın. (rekursiya)
+// 7. Parametrdə n ədədini qəbul edən və n-ci Fibonaççi sayını qaytaran funksiya yazın. (rekursiya)
 
-function loop(a,b){
-    if(a<b-1){
-        console.log(a+1);
-        a++;
-        loop(a,b);
+function fib (n){
+    let a=1;
+    let b=1;
+    for(let i=3; i<=n;i++){
+        let c=a+b;
+        a=b;
+        b=c;
     }
+    return b;
 }
-loop(4,8);
+console.log(fib(10))
+
+// 1 1 2 3 5 8 13 21 34 55
